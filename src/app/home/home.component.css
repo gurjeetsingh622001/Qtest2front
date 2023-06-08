@@ -1,0 +1,10 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+.bg_1 {
+    background-color: rgb(198, 203, 203);
+    /* height: 660px; */
+    height: auto
+}

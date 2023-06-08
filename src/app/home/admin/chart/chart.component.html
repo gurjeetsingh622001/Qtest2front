@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <h2>Vertical Income Chart</h2>
+    <div class="col-md-8">
+        <apx-chart [series]="chartOptions2?.series" [chart]="chartOptions2?.chart" [xaxis]="chartOptions2?.xaxis"
+            [title]="chartOptions2?.title" [dataLabels]="chartOptions2?.dataLabels"
+            [yaxis]="chartOptions2?.yaxis"></apx-chart>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <h2>Horizonatal Education Chart</h2>
+    <div class="col-md-8">
+        <apx-chart [series]="chartOptions3?.series" [chart]="chartOptions3?.chart" [xaxis]="chartOptions3?.xaxis"
+            [title]="chartOptions3?.title" [plotOptions]="chartOptions3?.plotOptions" [dataLabels]="chartOptions3?.dataLabels" [yaxis]="chartOptions3?.yaxis" [stroke]="chartOptions3?.stroke" [tooltip]="chartOptions3?.tooltip"
+           ></apx-chart>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div *ngFor="let country of countries">
+
+        <div class="row justify-content-center">
+            <div class="col-md-5" *ngIf="country === 'India'">
+                <h1>India's Occcupation Chart</h1>
+                <apx-chart [series]="indianSeries" [chart]="chartDetails" [labels]="labels"></apx-chart>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-5" *ngIf="country === 'Australia'">
+                <h1>Australia's Occcupation Chart</h1>
+                <apx-chart [series]="australiaSeries" [chart]="chartDetails" [labels]="labels"></apx-chart>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-5" *ngIf="country === 'Spain'">
+                <h1>Span's Occcupation Chart</h1>
+                <apx-chart [series]="spainSeries" [chart]="chartDetails" [labels]="labels"></apx-chart>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-5" *ngIf="country === 'United States'">
+                <h1>United States Occupation Chart</h1>
+                <apx-chart [series]="unitedStateSeries" [chart]="chartDetails" [labels]="labels"></apx-chart>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+

@@ -1,0 +1,13 @@
+div{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    /* margin-top: 150px; */
+}
+h1{
+    font-size: 100px;
+    margin-top: 220px;
+    color: rgb(129, 210, 213);
+    text-shadow: 5px 5px 10px black;
+}

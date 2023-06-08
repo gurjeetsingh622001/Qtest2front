@@ -1,0 +1,66 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 149, 255);
+}
+
+.background_1 {
+    background-color: rgb(255, 222, 238);
+    height: 660px;
+}
+
+.background_2 {
+    /* background-color: rgb(241, 206, 251); */
+    background-color: #d7f4ff;
+    height: 420px;
+    opacity: 90%;
+    border-radius: 30px;
+}
+
+h1{
+    margin-top: 50px;
+    font-size: 40px;
+    color: rgb(255, 101, 101);
+    font-weight: 999;
+    font-family:Courier;
+     
+}
+
+
+
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.background_2 {
+    /* background-color: rgb(172, 183, 183); */
+    margin-top: 100px;
+}
+
+:host ::ng-deep .p-inputtext {
+    /* add your styles here */
+    width: 430px;
+    height: 50px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+::ng-deep .ui-inputtext {
+    font-size: 14px;
+    height: 30px;
+    width: 500px;
+
+}
+
+.btn {
+    width: 430px;
+}
